@@ -1,0 +1,53 @@
+:root {
+  /* fonts */
+  --medium1: Montserrat;
+  --koni-28: "iCiel Koni";
+
+  /* font sizes */
+  --montserrat-16-bold-size: 16px;
+  --medium1-size: 18px;
+  --medium-size: 20px;
+  --bold-size: 24px;
+  --koni-28-size: 28px;
+  --font-size-xl: 30px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 72px;
+  --header-size: 96px;
+
+  /* Colors */
+  --w: #fff;
+  --color-dimgray-100: #6c7272;
+  --color-dimgray-200: #666;
+  --text: #23221f;
+  --color-darkorange-100: #ff8a00;
+  --color-darkorange-200: #fa7d09;
+  --color-darkslategray: #444;
+  --ultimate-gray: #989a9c;
+
+  /* Gaps */
+  --gap-xs: 4px;
+  --gap-sm: 8px;
+  --gap-md: 16px;
+  --gap-lg: 24px;
+  --gap-xl: 80px;
+
+  /* Paddings */
+  --padding-2xs: 10px;
+  --padding-xs: 16px;
+  --padding-sm: 20px;
+  --padding-md: 24px;
+  --padding-lg: 32px;
+  --padding-xl: 56px;
+
+  /* border radiuses */
+  --br-xs: 16px;
+  --br-sm: 20px;
+  --br-md: 32px;
+  --br-lg: 33px;
+  --br-xl: 56px;
+
+  /* Effects */
+  --tabs: 4px 4px 45px rgba(109, 46, 0, 0.35);
+  --button: 0px 4px 8px rgba(165, 15, 15, 0.45);
+  --inner-shadow: -1px 3px 3px rgba(178, 91, 11, 0.5) inset;
+}
