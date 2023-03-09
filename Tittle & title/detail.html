@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=iCiel Koni:wght@900&display=swap"
+    />
+  </head>
+  <body>
+    <div class="s-kin">
+      <div class="bg">
+        <img class="group-icon5" alt="" src="public/group5.svg" />
+        <div class="frame4"></div>
+        <div class="frame5"></div>
+        <div class="s-kin-1">Sự kiện 1</div>
+      </div>
+      <div class="khung-cha-v">
+        <div class="group-container">
+          <div class="frame-parent1">
+            <div class="rectangle-wrapper">
+              <img class="frame-child" alt="" src="public/image/rectangle-1@2x.png" />
+            </div>
+            <div class="time-parent">
+              <div class="time">
+                <img
+                  class="icons-calendar"
+                  alt=""
+                  src="public/icons--calendar.svg"
+                />
+                <div class="date-event">30/05/2021 - 01/06/2021</div>
+              </div>
+              <div class="m-sen-park">Đầm sen Park</div>
+              <b class="price">25.000 VNĐ</b>
+            </div>
+          </div>
+          <div class="frame-parent2">
+            <div class="rectangle-container">
+              <img class="frame-item" alt="" src="public/image/rectangle-11@2x.png" />
+            </div>
+            <div class="lorem-ipsum-is">
+              Lorem Ipsum is not simply random text. It has roots in a piece of
+              classical Latin literature from 45 BC, making it over 2000 years
+              old. words, consectetur, from a Lorem Ipsum passage, and going
+              through the cites of the word in classical literature,
+            </div>
+          </div>
+          <div class="frame-parent3">
+            <div class="rectangle-frame">
+              <img class="frame-item1" alt="" src="public/image/rectangle-11@2x.png" />
+            </div>
+            <div class="lorem-ipsum-is1">
+              Lorem Ipsum is not simply random text. It has roots in a piece of
+              classical Latin literature from 45 BC, making it over 2000 years
+              old. words, consectetur, from a Lorem Ipsum passage, and going
+              through the cites of the word in classical literature,
+            </div>
+          </div>
+          <div class="lorem-ipsum-is-container">
+            <span class="description1"
+              ><b class="lorem-ipsum">Lorem Ipsum</b
+              ><span class="is-simply-dummy">
+                is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic sdsd
+                typesetting, remaining cssa essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, of Lorem Ipsum.</span
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="group-div">
+          <div class="tags-parent">
+            <div class="tags" id="tagsContainer">
+              <b class="sample-text">Trang chủ</b>
+            </div>
+            <div class="tags1" id="tagsContainer1">
+              <b > Sự kiện</b>
+            </div>
+            <div class="tags1" id="tagsContainer2">
+              <b link="index.html" class="sample-text">Liên hệ</b>
+            </div>
+          </div>
+          <div class="group-group">
+            <img class="group-icon4" alt="" src="public/group4.svg" /><b
+              class="sample-text"
+              >0123456789</b
+            >
+          </div>
+        </div>
+        <img
+          class="little-little-logo-ngang-1"
+          alt=""
+          src="public/image/logo.png"
+        />
+      </div>
+    </div>
+    <script">
+            var content = document.getElementById("content");
+      if (content) {
+        content.addEventListener("click", function () {
+          var popup = document.getElementById("calendarContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var group2 = document.getElementById("group2");
+      if (group2) {
+        group2.addEventListener("click", function (e) {
+          // Please sync "thanh toán" to the project
+        });
+      }
+      
+      var tagsContainer = document.getElementById("tagsContainer");
+      if (tagsContainer) {
+        tagsContainer.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      
+      var tagsContainer1 = document.getElementById("tagsContainer1");
+      if (tagsContainer1) {
+        tagsContainer1.addEventListener("click", function (e) {
+           window.location.href = "./test.html";
+        });
+      }
+      
+      var tagsContainer2 = document.getElementById("tagsContainer2");
+      if (tagsContainer2) {
+        tagsContainer2.addEventListener("click", function (e) {
+          window.location.href = "./contact-us.html";
+        });
+      }
+    </script>
+  </body>
+</html>
