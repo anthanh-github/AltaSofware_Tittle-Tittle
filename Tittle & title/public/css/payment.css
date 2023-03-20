@@ -1,0 +1,374 @@
+
+.thanh-ton1 {
+  position: absolute;
+  height: 64.71%;
+  width: 44.57%;
+  top: 7.35%;
+  left: 27.72%;
+  font-weight: 900;
+  display: inline-block;
+}
+.frame1 {
+  position: absolute;
+  height: 10.04%;
+  width: 24.21%;
+  top: 78.14%;
+  right: 5.59%;
+  bottom: 11.82%;
+  left: 70.2%;
+  box-shadow: var(--button);
+  overflow: hidden;
+  cursor: pointer;
+  font-size: var(--font-size-11xl);
+  color: var(--w);
+  font-family: var(--header);
+}
+.text-sothe, .text-fullname, .text-date, .text-cvv{
+  position: relative;
+  line-height: 30px;
+}
+.text-sothe {
+  top: 60px;
+  left: 40px;
+}
+.text-fullname {
+  top: 140px;
+  left: 40px;
+}
+.text-date {
+  top: 210px;
+  left: 40px;
+}
+.text-cvv {
+  top: 290px;
+  left: 40px;
+}
+
+.vnd {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.vn-wrapper {
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--w);
+  box-shadow: var(--inner-shadow);
+  width: 233px;
+  height: 56px;
+  flex-shrink: 0;
+  overflow: hidden;
+  font-size: var(--medium1-size);
+}
+.s-tin-thanh-ton {
+  position: absolute;
+  top: 81px;
+  left: 129px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.wrapper {
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--w);
+  box-shadow: var(--inner-shadow);
+  width: 411px;
+  height: 56px;
+  flex-shrink: 0;
+  overflow: hidden;
+  font-size: var(--medium1-size);
+}
+.v,
+.wrapper1 {
+  position: relative;
+}
+.wrapper1 {
+  border-radius: var(--br-base);
+  background-color: var(--w);
+  box-shadow: var(--inner-shadow);
+  width: 94px;
+  height: 56px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.v {
+  line-height: 26px;
+  font-weight: 500;
+}
+.amount-ticket,
+.s-lng-v {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.amount-ticket {
+  flex-direction: row;
+  align-items: center;
+  font-size: var(--medium1-size);
+}
+.s-lng-v {
+  position: absolute;
+  top: 81px;
+  left: 426px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.wrapper2 {
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--w);
+  box-shadow: var(--inner-shadow);
+  width: 234px;
+  height: 56px;
+  flex-shrink: 0;
+  overflow: hidden;
+  font-size: var(--medium1-size);
+}
+.ngy-s-dng {
+  position: absolute;
+  top: 81px;
+  left: 613px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.thng-tin-lin {
+  position: relative;
+  line-height: 30px;
+  display: inline-block;
+  width: 240px;
+}
+.nguyn-th-ngc-tuyn-wrapper {
+  align-self: stretch;
+  position: relative;
+  border-radius: var(--br-base);
+  background-color: var(--w);
+  box-shadow: var(--inner-shadow);
+  height: 56px;
+  flex-shrink: 0;
+  overflow: hidden;
+  font-size: var(--medium1-size);
+}
+.email,
+.dien-thoai,
+.thng-tin-lin-h {
+  position: absolute;
+  left: 129px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.thng-tin-lin-h {
+  top: 191px;
+  width: 391px;
+}
+.email,
+.dien-thoai {
+  top: 301px;
+}
+.email {
+  top: 411px;
+  width: 391px;
+}
+.frame,
+.vector-icon {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon {
+  height: 94.55%;
+  width: 9.28%;
+  top: 0;
+  right: 31.05%;
+  bottom: 5.45%;
+  left: 59.67%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.thanh-ton2,
+.v-cng- {
+  position: absolute;
+  font-weight: 900;
+}
+.thanh-ton2 {
+  top: 100px;
+  left: 708px;
+  font-size: var(--header-size);
+  line-height: 100px;
+}
+.sample-text {
+  position: relative;
+}
+.group-container {
+  position: absolute;
+  top: 5px;
+  left: 753px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+  font-size: var(--montserrat-16-bold-size);
+}
+.little-little-logo-ngang-1 {
+  position: absolute;
+  top: 1px;
+  left: 201px;
+  width: 229px;
+  height: 91px;
+  object-fit: cover;
+}
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1924.5px;
+  height: 122.46px;
+  font-size: var(--medium1-size);
+  font-family: var(--medium1);
+}
+.trini-arnold-votay1-2-icon {
+  position: absolute;
+  top: 400px;
+  left: -180px;
+  width: 459.74px;
+  height: 544px;
+  object-fit: cover;
+}
+.thanh-ton {
+  position: relative;
+  border-radius: var(--br-13xl);
+  background: radial-gradient(50% 50%at 50% 50%, #ffdb7e, #ff7a00);
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--koni-28-size);
+  color: var(--w);
+  font-family: var(--header);
+}
+.confirm-ticket, .group-ticket1{
+  position: absolute;
+  height: 7.25%;
+  top: 24.34%;
+  right: 20.03%;
+  bottom: 61.41%;
+  box-shadow: var(--button);
+  font-size: var(--koni-28-size);
+  background-color:#D2010B;
+  border-radius: 10% 10% 50% 50%;
+  border: dashed #FFB489;
+}
+.confirm-ticket {
+  width: 23.79%;
+  left: 20.5%;
+}
+.group-ticket1 {
+  width: 21.79%;
+  left: 67.5%;
+}
+.confirm-yourticket {
+  position: absolute;
+  width: 100%;
+  text-align:center;
+  top: 25%;
+  left: 1%;
+  font-weight: 900;
+}
+.check-ticket {
+  top: 260px;
+  left: 100px;
+  float: left;
+  width: 980px;
+  height: 600px;
+  font-size: var(--bold-size);
+  color: var(--text);
+  font-family: var(--medium1);
+  background-color:#FFF6D4;
+  border-radius: 30px;
+  border: dashed #FFB489;
+  position: absolute;
+  overflow: hidden;
+}
+.thanhtoan {
+  height: 11.33%;
+  width: 24.21%;
+  top: 80.83%;
+  right: 5.59%;
+  bottom: 7.83%;
+  left: 70.2%;
+  box-shadow: var(--button);
+  overflow: hidden;
+  font-size: var(--koni-28-size);
+  color: var(--w);
+  font-family: var(--koni-28);
+  position: absolute;
+}
+.thanhtoan {
+  top: 260px;
+  left: 1100px;
+  width: 580px;
+  height: 600px;
+  font-size: var(--bold-size);
+  color: var(--text);
+  font-family: var(--medium1);
+  background-color:#FFF6D4;
+  border-radius: 30px;
+   border: dashed #FFB489;
+}
+
+.sothe,.card-fullname, .card-date,.CVV{
+  position: absolute;
+  border-radius: var(--br-base);
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--text);
+  font-size:25px;
+  border: 0px;
+  padding-left:20px;
+  box-shadow:var(--inner-shadow);
+}
+.sothe {
+  top: 100px;
+  left: 34px;
+  width:450px;
+  height:56px;
+}
+.card-fullname {
+  top: 203px;
+  left: 34px;
+  width:450px;
+  height:56px;
+}
+.card-date {
+  top: 310px;
+  left: 34px;
+  width:450px;
+  height:56px;
+}
+.CVV {
+  top: 420px;
+  left: 34px;
+  width:150px;
+  height:56px;
+  
+}
+.previous-icon {
+  position: relative;
+  width: 7.66px;
+  height: 13.31px;
+  flex-shrink: 0;
+}
+.thng-5-2021 {
+  position: relative;
+  line-height: 36px;
+}
