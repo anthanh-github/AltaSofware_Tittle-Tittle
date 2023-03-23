@@ -2,48 +2,36 @@
 <div class="home">
     <div class="frame">
         <div class="background">
-            <!--       <img class="group-icon" alt="" src="upload/group.svg" /><img
-            class="frame-icon"
-            alt=""
-            src="upload/frame.svg"
-          /><img class="vector-icon" alt="" src="upload/vector.svg" /><img
-            class="vector-icon1"
-            alt=""
-            src="upload/vector1.svg"
-          /><img class="vector-icon2" alt="" src="upload/vector2.svg" /><img
-            class="vector-icon3"
-            alt=""
-            src="upload/vector3.svg"
-          /><img class="vector-icon4" alt="" src="upload/vector4.svg" /><img
-            class="vector-icon5"
-            alt=""
-            src="upload/vector5.svg"
-          /><img class="vector-icon6" alt="" src="upload/vector6.svg" /> -->
             <div class="su-kien-noi-bat">Sự kiện nổi bật</div>
             <div class="su-kien-1 mySlides ">
+                <?php foreach ($featuredProducts as $product) : ?>
                 <div class="su-kien">
-                    <img class="su-kien-1-child" alt="" src="upload/rectangle-1@2x.png" />
+                    <img class="su-kien-1-child" alt="" src="upload/<?= $product->getFeaturedImage() ?>" />
                     <div class="group-parent">
                         <div class="frame-wrapper">
                             <div class="frame-parent">
                                 <div class="su-kien-1-parent">
-                                    <b class="tittle-event">Sự kiện 1</b>
-                                    <div class="name-event">Đầm sen Park</div>
+                                    <b class="tittle-event"><?= $product->getName() ?></b>
+                                    <div class="name-event"><?= $product->getSku() ?></div>
                                 </div>
                                 <div class="time-event">
                                     <img class="icons-calendars" alt="" src="upload/icons--calendar.svg" />
-                                    <div class="div35">30/05/2021 - 01/06/2021</div>
+                                    <div class="div35"><?= $product->getDiscountFromDate() ?>
+                                        <?= $product->getDiscountToDate() ?></div>
                                 </div>
                             </div>
                         </div>
-                        <b class="vn">25.000 VNĐ</b>
+                        <b class="vn"><?= $product->getPrice() ?></b>
                         <div class="btn-xem-chi-tit" href="detail.html">
-                            <a href="?c=event&a=detail" class="xem-chi-tit">Xem chi tiết</a>
+                            <a href="?c=event&a=detail&id=<?= $product->getId() ?>" class="xem-chi-tit">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
+                <br>
+                <?php endforeach ?>
             </div>
-            <div class="su-kien-2 mySlides">
+
+            <!-- <div class="su-kien-2 mySlides">
                 <div class="su-kien-13">
                     <div class="su-kien">
                         <img class="su-kien-1-child" alt="" src="upload/rectangle-1@2x.png" />
@@ -113,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <img class="previous-btn-icon" alt="" src="upload/previous-btn.svg" /><img class="next-btn-icon" alt=""
                 src="upload/next-btn.svg" />
         </div>
