@@ -3,21 +3,22 @@
     <div class="frame">
         <div class="bg">
             <img class="group-icon5" alt="" src="public/group5.svg" />
-            <div class="s-kin-1">Sự kiện 1</div>
+            <div class="s-kin-1"><?= $product->getName() ?></div>
         </div>
         <div class="khung-cha-v">
             <div class="group-container-detail">
                 <div class="frame-parent-detail1">
                     <div class="rectangle-wrapper">
-                        <img class="frame-child" alt="" src="upload/rectangle-1@2x.png" />
+                        <img class="frame-child" alt="" src="upload/<?= $product->getFeaturedImage() ?>" />
                     </div>
                     <div class="time-parent">
                         <div class="time">
                             <img class="icons-calendar" alt="" src="public/icons--calendar.svg" />
-                            <div class="date-event">30/05/2021 - 01/06/2021</div>
+                            <div class="date-event"><?= $product->getDiscountFromDate() ?>
+                                <?= $product->getDiscountToDate() ?></div>
                         </div>
-                        <div class="m-sen-park">Đầm sen Park</div>
-                        <b class="price">25.000 VNĐ</b>
+                        <div class="m-sen-park"><?= $product->getSku() ?></div>
+                        <b class="price"><?= $product->getPrice() ?>VNĐ</b>
                     </div>
                 </div>
                 <div class="frame-parent2">
@@ -55,26 +56,26 @@
                 </div>
             </div>
         </div>
-        <div class="navigation">
-            <div class="group-div">
+    </div>
+    <div class="navigation">
+        <div class="group-div">
+            <div class="tags-parent">
                 <div class="tags-parent">
-                    <div class="tags-parent">
-                        <div class="tags1 ">
-                            <a href="./" class="sample-text">Trang Chủ</a>
-                        </div>
-                        <div class="tags1">
-                            <a href="./?c=event" class="sample-text ">Sự Kiện</a>
-                        </div>
-                        <div class="tags1">
-                            <a href="./?c=contact&a=form" class="sample-text">Liên Hệ</a>
-                        </div>
+                    <div class="tags1 ">
+                        <a href="./" class="sample-text">Trang Chủ</a>
+                    </div>
+                    <div class="tags1">
+                        <a href="./?c=event" class="sample-text ">Sự Kiện</a>
+                    </div>
+                    <div class="tags1">
+                        <a href="./?c=contact&a=form" class="sample-text">Liên Hệ</a>
                     </div>
                 </div>
-                <div class="group-group">
-                    <b class="sample-text">0123456789</b>
-                </div>
             </div>
-            <img class="little-little-logo-ngang-1" alt="" src="upload/logo.png" />
+            <div class="group-group">
+                <b class="sample-text">0123456789</b>
+            </div>
         </div>
+        <img class="little-little-logo-ngang-1" alt="" src="upload/logo.png" />
     </div>
 </div>
