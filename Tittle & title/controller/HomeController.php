@@ -4,7 +4,9 @@ class HomeController
 
     function index()
     {
-        require 'view/home/index.php';
+        $categoryRepository = new CategoryRepository();
+        $categories = $categoryRepository->getAll();
+        include 'view/home/index.php';
     }
     function payment()
     {
