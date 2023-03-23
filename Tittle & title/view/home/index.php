@@ -48,9 +48,11 @@
                 <form class="form-contact" action="#" method="POST">
                     <div class="form-group">
                         <select class="gi-gia-nh" id="category" class="form-control">
-                            <option value="Gói Gia Đình">Gói Gia Đình</option>
-                            <option value="Gói học sinh">Gói học sinh </option>
-                            <option value="Gói 2 người ">Gói 2 người</option>
+                            <?php foreach ($categories as $category) : ?>
+                            <option value="<?= $category->getId() ?>"><?= $category->getName() ?></option>
+                            <?php endforeach ?>
+                            <!-- <option value="Gói học sinh">Gói học sinh </option>
+                            <option value="Gói 2 người ">Gói 2 người</option> -->
                         </select>
                         <!-- <input type="text" class="gi-gia-nh" name="fullname" placeholder="Gói gia đình" required> -->
                     </div>
@@ -73,7 +75,6 @@
 
                         <div class="form-group col-sm-12">
                             <a href="./?c=home&a=payment" class="yourticket1">Đặt vé</a>
-                            <!--  <button type="submit" class="yourticket1" href="thanh-ton.html"> Đặt vé</button> -->
                         </div>
 
                     </div>
@@ -86,6 +87,27 @@
         </div>
     </div>
     <img class="converted-06-1-icon" alt="" src="upload/18451-converted06-1@2x.png" />
+    <div class="navigation">
+        <div class="group-div">
+            <div class="tags-parent">
+                <div class="tags-parent">
+                    <div class="tags1 ">
+                        <a href="./" class="sample-text">Trang Chủ</a>
+                    </div>
+                    <div class="tags1">
+                        <a href="./?c=event" class="sample-text ">Sự Kiện</a>
+                    </div>
+                    <div class="tags1">
+                        <a href="./?c=contact&a=form" class="sample-text">Liên Hệ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="group-group">
+                <b class="sample-text">0123456789</b>
+            </div>
+        </div>
+        <img class="little-little-logo-ngang-1" alt="" src="upload/logo.png" />
+    </div>
     <div class="navigation">
         <div class="group-div">
             <div class="tags-parent">
