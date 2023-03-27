@@ -3,4 +3,4 @@
 define('SERVERNAME', 'localhost');
 define('USERNAME', 'root');
 define('PASSWORD', '');
-define('DBNAME', 'little');
+define('DBNAME', 'project2');
