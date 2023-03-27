@@ -18,7 +18,7 @@
                                 <?= $product->getEventToDate() ?></div>
                         </div>
                         <div class="m-sen-park"><?= $product->getName() ?></div>
-                        <b class="price"><?= $product->getPrice() ?>VNĐ</b>
+                        <b class="price"><?= number_format($product->getPrice()) ?>VNĐ</b>
                     </div>
                 </div>
                 <div class="frame-parent2">
