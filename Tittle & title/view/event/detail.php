@@ -3,56 +3,44 @@
     <div class="frame">
         <div class="bg">
             <img class="group-icon5" alt="" src="public/group5.svg" />
-            <div class="s-kin-1"><?= $product->getName() ?></div>
+            <div class="s-kin-1"><?= $product->getTittle() ?></div>
         </div>
         <div class="khung-cha-v">
             <div class="group-container-detail">
                 <div class="frame-parent-detail1">
                     <div class="rectangle-wrapper">
-                        <img class="frame-child" alt="" src="upload/<?= $product->getFeaturedImage() ?>" />
+                        <img class="frame-child" alt="" src="upload/<?= $product->getImage() ?>" />
                     </div>
                     <div class="time-parent">
                         <div class="time">
                             <img class="icons-calendar" alt="" src="public/icons--calendar.svg" />
-                            <div class="date-event"><?= $product->getDiscountFromDate() ?>
-                                <?= $product->getDiscountToDate() ?></div>
+                            <div class="date-event"><?= $product->getEventFromDate() ?> -
+                                <?= $product->getEventToDate() ?></div>
                         </div>
-                        <div class="m-sen-park"><?= $product->getSku() ?></div>
+                        <div class="m-sen-park"><?= $product->getName() ?></div>
                         <b class="price"><?= $product->getPrice() ?>VNĐ</b>
                     </div>
                 </div>
                 <div class="frame-parent2">
                     <div class="rectangle-container">
-                        <img class="frame-item" alt="" src="upload/rectangle-11@2x.png" />
+                        <img class="frame-item" alt="" src="upload/<?= $product->getImage() ?>" />
                     </div>
                     <div class="lorem-ipsum-is">
-                        Lorem Ipsum is not simply random text. It has roots in a piece of
-                        classical Latin literature from 45 BC, making it over 2000 years
-                        old. words, consectetur, from a Lorem Ipsum passage, and going
-                        through the cites of the word in classical literature,
+                        <?= $product->getDescription3() ?>
                     </div>
                 </div>
                 <div class="frame-parent3">
                     <div class="rectangle-frame">
-                        <img class="frame-item1" alt="" src="upload/rectangle-11@2x.png" />
+                        <img class="frame-item1" alt="" src="upload/<?= $product->getImage() ?>" />
                     </div>
                     <div class="lorem-ipsum-is1">
-                        Lorem Ipsum is not simply random text. It has roots in a piece of
-                        classical Latin literature from 45 BC, making it over 2000 years
-                        old. words, consectetur, from a Lorem Ipsum passage, and going
-                        through the cites of the word in classical literature,
+                        <?= $product->getDescription2() ?>
                     </div>
                 </div>
                 <div class="lorem-ipsum-is-container">
-                    <span class="description1"><b class="lorem-ipsum">Lorem Ipsum</b><span class="is-simply-dummy">
-                            is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever
-                            since the 1500s, when an unknown printer took a galley of type
-                            and scrambled it to make a type specimen book. It has survived
-                            not only five centuries, but also the leap into electronic sdsd
-                            typesetting, remaining cssa essentially unchanged. It was
-                            popularised in the 1960s with the release of Letraset sheets
-                            containing Lorem Ipsum passages, of Lorem Ipsum.</span></span>
+                    <span class="description1"><span class="is-simply-dummy">
+                            <?= $product->getDescription1() ?>
+                        </span></span>
                 </div>
             </div>
         </div>
