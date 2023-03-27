@@ -21,8 +21,8 @@
                                 </div>
                             </div>
                         </div>
-                        <b class="vn"><?= $product->getPrice() ?></b>
-                        <div class="btn-xem-chi-tit" href="detail.html">
+                        <b class="vn"><?= number_format($product->getPrice()) ?></b>
+                        <div class="btn-xem-chi-tit">
                             <a href="?c=event&a=detail&id=<?= $product->getId() ?>" class="xem-chi-tit">Xem chi tiết</a>
                         </div>
                     </div>
